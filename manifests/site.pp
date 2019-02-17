@@ -10,6 +10,10 @@ node default {
 }
 node 'centos03.olimpo.com' {
   include role::master_server
+  file {'/root/README':
+    ensure  => file,
+    content => $fqdn,
+  }
 }
 node 'centos04.olimpo.com' {
   include role::docker_server
