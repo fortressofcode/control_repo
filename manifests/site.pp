@@ -1,4 +1,7 @@
 node default {
+  user { 'linux':
+    ensure => present,
+  }
   file {'/root/README':
     ensure  => file,
     content => 'this is a readme file',
