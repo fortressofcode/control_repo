@@ -6,3 +6,6 @@ node default {
     owner   => 'linux',
   }
 }
+node 'centos03.olimpo.com' {
+  include role:master_server
+}
