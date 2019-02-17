@@ -12,7 +12,7 @@ node 'centos03.olimpo.com' {
   include role::master_server
   file {'/root/README':
     ensure  => file,
-    content => $fqdn,
+    content => "The hostname is: ${fqdn}\n",
   }
 }
 node 'centos04.olimpo.com' {
