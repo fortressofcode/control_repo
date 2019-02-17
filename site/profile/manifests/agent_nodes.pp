@@ -1,5 +1,5 @@
 class profile::agent_nodes {
   include dockeragent
-  dockeragent::node {'web.olimpo.com':}
-  dockeragent::node {'db.olimpo.com':)
+  dockeragent::node { 'web.puppet.vm': }
+  dockeragent::node { 'db.puppet.vm': }
 }
